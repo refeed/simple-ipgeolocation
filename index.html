@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -18,19 +17,28 @@
                 A simple app that calls IPGeolocation API.
             </p>
         </div>
+
+      
     </section>
     <section class="section">
         <div class="container">
             <div class="field columns is-centered">
-                <div class="column is-half">
+                <div class="column is-half" style="text-align: center;">
                     <label class="label">IP Address</label>
                     <div class="control">
-                        <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+                        <input class="input is-success" id="ip-input" type="text" placeholder="IP Address" value="8.8.8.8">
                     </div>
+                  <button class="button is-fullwidth is-primary mt-2" onclick="checkLocationBtnClicked()">Check location</button>
                 </div>
             </div>
+          <div id="geo-result"></div>
         </div>
+      
     </section>
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+      <script src="js/script.js"></script>
 </body>
 
 </html>
